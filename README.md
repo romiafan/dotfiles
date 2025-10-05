@@ -70,6 +70,11 @@ source ~/.zshrc
 - Smart indentation
 - Search improvements
 
+### `Brewfile`
+- Optional Homebrew package manager configuration
+- Includes common development tools
+- Easy installation with `brew bundle`
+
 ## Customization
 
 Feel free to customize any of the dotfiles to suit your preferences:
@@ -96,12 +101,29 @@ rm ~/.zshrc ~/.zsh_aliases ~/.vimrc ~/.gitconfig ~/.gitignore_global
 - Zsh (default shell on modern macOS)
 - Git
 
+## Brewfile (Optional)
+
+A `Brewfile` is included for managing Homebrew packages. To use it:
+
+1. Install Homebrew (if not already installed):
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+2. Install packages from the Brewfile:
+```bash
+cd ~/dotfiles
+brew bundle
+```
+
+Feel free to customize the `Brewfile` by adding or removing packages as needed.
+
 ## Optional Enhancements
 
-Consider installing these tools for an enhanced development environment:
-- [Homebrew](https://brew.sh/) - Package manager for macOS
+Consider these additional tools for an enhanced development environment:
 - [Oh My Zsh](https://ohmyz.sh/) - Zsh framework with plugins and themes
 - [iTerm2](https://iterm2.com/) - Advanced terminal emulator
+- [Powerline fonts](https://github.com/powerline/fonts) - Enhanced terminal fonts
 
 ## License
 
